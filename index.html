@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1> QR Code </h1>
+        <input type="text" id="qrText" placeholder="Enter text or URL">
+        <button onclick="generateQRCode()">Gerar QR Code</button>
+        <div id="qrCode"></div>
+        <input type="color" id="cor" value="#000000">
+        <label for="tamanho">Escolha o tamanho:</label>
+    <select id="tamanho">
+        <option value="150x150">Pequeno (150x150)</option>
+        <option value="300x300">Médio (300x300)</option>
+        <option value="500x500">Grande (500x500)</option>
+    </select>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="java.js"></script>
+</body>
+</html>
